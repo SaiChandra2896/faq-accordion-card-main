@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <img
+          id="WomenOnlineDesktop"
+          src="./images/illustration-woman-online-desktop.svg"
+          alt="Women Online Desktop"
+        />
+      </section>
+      <section class="right">
+        <h2>FAQ</h2>
+        <div class="accordion">
+          <div class="question">
+            <h3 id="#Q1" class="light" onclick="accordion('#I1','#Q1','#A1')">
+              How many team members can I invite?
+              <img
+                id="#I1"
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="rotate"
+              />
+            </h3>
+            <p id="#A1" class="hidden">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+          <div class="question">
+            <h3 id="#Q2" class="light" onclick="accordion('#I2','#Q2','#A2')">
+              What is the maximum file upload size?
+              <img
+                id="#I2"
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="rotate"
+              />
+            </h3>
+            <p id="#A2" class="hidden">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+          <div class="question">
+            <h3 id="#Q3" class="light" onclick="accordion('#I3','#Q3','#A3')">
+              How do I reset my password?
+              <img
+                id="#I3"
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="rotate"
+              />
+            </h3>
+            <p id="#A3" class="hidden">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+          <div class="question">
+            <h3 id="#Q4" class="light" onclick="accordion('#I4','#Q4','#A4')">
+              Can I cancel my subscription?
+              <img
+                id="#I4"
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="rotate"
+              />
+            </h3>
+            <p id="#A4" class="hidden">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+          <div class="question">
+            <h3 id="#Q5" class="light" onclick="accordion('#I5','#Q5','#A5')">
+              Do you provide additional support?
+              <img
+                id="#I5"
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="rotate"
+              />
+            </h3>
+            <p id="#A5" class="hidden">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!--
+   How do I reset my password?
+    Click “Forgot password” from the login page or “Change password” from your
+    profile page. A reset link will be emailed to you. Can I cancel my
+    subscription? Yes! Send us a message and we’ll process your request no
+    questions asked. Do you provide additional support? Chat and email support
+    is available 24/7. Phone lines are open during normal business hours.-->

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --darkBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --darkGrayishBlue: hsl(240, 6%, 50%);
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+*::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(var(--softViolet), var(--softBlue));
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 10px;
+  padding: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 300x500 -moobile */
+main {
+  background-color: white;
+  border-radius: 1.25rem;
+  width: 18.75rem;
+  height: 25rem;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+.left #WomenOnlineDesktop {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+
+.right {
+  margin: 0em 2em;
+  margin-top: -3em;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.right h2 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.accordion {
+  height: 100%;
+  overflow: scroll;
+}
+
+.question {
+  padding: 1em 0em;
+  border-bottom: 1px solid var(--lightGrayishBlue);
+}
+.question h3 {
+  display: flex;
+  justify-content: space-between;
+}
+.question h3 img {
+  object-fit: contain;
+  transition: transform 100ms ease-in-out;
+}
+.question p {
+  margin-top: 1em;
+}
+
+.question h3:hover {
+  color: var(--softRed);
+}
+
+/* 900x500 -desktop */
+@media screen and (min-width: 900px) {
+  main {
+    display: flex;
+    width: 56.25rem;
+    height: 31.25rem;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 120% 70%;
+    width: 50%;
+    overflow: hidden;
+  }
+  .left #WomenOnlineDesktop {
+    max-width: 25rem;
+    transform: none;
+    transform: translateX(-20%);
+    height: auto;
+  }
+
+  .right {
+    margin: 0em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    width: 25rem;
+    height: 100%;
+  }
+
+  .right h2 {
+    width: 90%;
+    text-align: left;
+    font-size: 4em;
+    margin-bottom: 0.7em;
+  }
+
+  .accordion {
+    height: 100%;
+    overflow: scroll;
+    width: 21.875rem;
+    height: 15.625rem;
+  }
+
+  .question {
+    padding: 1em 0em;
+    border-bottom: 1px solid var(--lightGrayishBlue);
+    font-size: 1.3em;
+  }
+  .question h3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .question h3 img {
+    object-fit: contain;
+    transition: transform 100ms ease-in-out;
+  }
+  .question p {
+    margin-top: 1em;
+  }
+
+  .question h3:hover {
+    color: var(--softRed);
+  }
+}
+/* JS Class */
+.hidden {
+  display: none;
+}
+.light {
+  font-weight: 400;
+}
+.rotate {
+  transform: rotate(180deg);
+}
